@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  api:
+    build:
+      context: ./
+    volumes:
+      - .:/app
+    command: "node ./_server/api.js"
+    ports:
+      - 3000:3000
+  example-site:
+    build:
+      context: ./
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: "yarn start:docker"
+    ports:
+      - 1313:1313
+volumes:
+  node_modules:

@@ -1,0 +1,8 @@
+/node_modules
+/exampleSite/public
+/exampleSite/hugo_stats.json
+/img/logos
+/dist
+.hugo_build.lock
+resources/_gen/
+/img/products/*
