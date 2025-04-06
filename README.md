@@ -18,6 +18,10 @@ This project is set up to be run with or without docker. After meeting all the [
 2. Run `yarn start`
 3. Run `node ./_server/api.js`
 
+### Fetch Images
+Currently, the script to fetch images only works using the docker set-up.
+With the docker compose running, run `yarn fetch-images`, image files should be saved in `static/img/products`
+
 [1]: https://nodejs.org/en/download/package-manager#macos
 [2]: https://gohugo.io/getting-started/installing/
 [3]: https://golang.org/doc/install
