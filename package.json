@@ -14,7 +14,7 @@
     "scripts": {
         "start": "hugo server --disableFastRender --verbose --debug",
         "start:docker": "hugo server --bind=0.0.0.0 --baseURL=http://localhost:1313",
-        "build": "hugo -d ../dist"
+        "build": "hugo -d ./dist"
     },
     "engines": {
         "node": ">=20"
