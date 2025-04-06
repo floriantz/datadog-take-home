@@ -5,4 +5,4 @@
 /dist
 .hugo_build.lock
 resources/_gen/
-/img/products/*
+/static/img/products/*
