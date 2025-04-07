@@ -22,6 +22,15 @@ This project is set up to be run with or without docker. After meeting all the [
 Currently, the script to fetch images only works using the docker set-up.
 With the docker compose running, run `yarn fetch-images`, image files should be saved in `static/img/products`
 
+### Deploy to S3
+Uploading the site through Terraform is a bit painful currently to handle the mimetypes correctly, ideally I'd do it in a github action but for now
+`aws s3 sync public s3://datadog-take-home.floriantz.com` does the job.
+
+### Access the site
+Site is deployed at http://datadog-take-home.floriantz.com/
+Currently just as an s3 static site on S3, a good first improvement would be adding a cloudfront CDN and remove direct public access to the bucket
+
+
 [1]: https://nodejs.org/en/download/package-manager#macos
 [2]: https://gohugo.io/getting-started/installing/
 [3]: https://golang.org/doc/install
