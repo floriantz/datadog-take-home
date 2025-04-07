@@ -30,6 +30,9 @@ Uploading the site through Terraform is a bit painful currently to handle the mi
 Site is deployed at http://datadog-take-home.floriantz.com/
 Currently just as an s3 static site on S3, a good first improvement would be adding a cloudfront CDN and remove direct public access to the bucket
 
+### Datadog RUM
+RUM is integrated through the sync CDN method on the florian.thelliez@gmail.com account
+
 
 [1]: https://nodejs.org/en/download/package-manager#macos
 [2]: https://gohugo.io/getting-started/installing/
