@@ -20,7 +20,9 @@ This project is set up to be run with or without docker. After meeting all the [
 
 ### Fetch Images
 Currently, the script to fetch images only works using the docker set-up.
-With the docker compose running, run `yarn fetch-images`, image files should be saved in `static/img/products`
+With the docker compose running, run 
+`docker compose exec example-site yarn fetch-images`
+Image files should be saved in `static/img/products`
 
 ### Deploy to S3
 Uploading the site through Terraform is a bit painful currently to handle the mimetypes correctly, ideally I'd do it in a github action but for now
