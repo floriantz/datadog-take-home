@@ -1,5 +1,12 @@
 # terraform config
 terraform {
+  backend "s3" {
+      bucket = "floriantz-terraform-states"
+      key    = "websites-platform-take-home"
+      region = "eu-west-3"
+      use_lockfile = true
+    }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -12,6 +19,7 @@ terraform {
 
 # aws config
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-3"
+  profile = "default"
 }
 

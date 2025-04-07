@@ -15,6 +15,7 @@
         "start": "hugo server --disableFastRender --verbose --debug",
         "start:docker": "hugo server --bind=0.0.0.0 --baseURL=http://localhost:1313",
         "build": "hugo -d ./dist",
+        "build-prod": "hugo -d ./public",
         "fetch-images": "ts-node scripts/fetch-images.ts"
     },
     "engines": {
