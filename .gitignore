@@ -6,3 +6,5 @@
 .hugo_build.lock
 resources/_gen/
 /static/img/products/*
+/infra/.terraform/*
+/infra/.terraform.lock.hcl
