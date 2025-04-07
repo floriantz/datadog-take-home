@@ -11,8 +11,11 @@
 
     
 
-<link rel="stylesheet" href="/css/styles.min.f12046f87ba40a9ec7c8a2cde86da391357a1d75993ca4fc1cb5cfc916996b42.css">
+<link rel="stylesheet" href="/css/styles.min.c8d9b3a0d505e43c97a94306f4753f51e5c2798d8dbb578afef41ae1fa459a10.css">
 
+    
+    <script src="/js/main.js" defer></script>
+    
 </head>
 
 <body class="flex font-sans flex-col min-h-screen bg-purple-50 "><header class="bg-white drop-shadow-lg">
@@ -31,7 +34,46 @@
 <p>Below you will find a list of some of our products, select a product to learn more!</p>
 
     </div>
-    <div class="pt-8 flex justify-left">
+    <input type='text' id="search" class="mt-6 shadow appearance-none border rounded w-32 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Search cards..." />
+<div class="flex flex-wrap justify-left gap-4  mt-10">
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/alerts.png" alt="Alerts illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Alerts</h2>
+    </div>
+</article>
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/application-performance-monitoring.png" alt="Application Performance Monitoring illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Application Performance Monitoring</h2>
+    </div>
+</article>
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/database-monitoring.png" alt="Database Monitoring illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Database Monitoring</h2>
+    </div>
+</article>
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/log-management.png" alt="Log Management illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Log Management</h2>
+    </div>
+</article>
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/observability-pipelines.png" alt="Observability Pipelines illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Observability Pipelines</h2>
+    </div>
+</article>
+  <article class="card relative w-80 h-44 rounded-2xl overflow-hidden shadow-lg bg-gray-300">
+    <img src="img/products/real-user-monitoring.png" alt="Real User Monitoring (RUM) illustration" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h2 class="text-white text-lg font-semibold">Real User Monitoring (RUM)</h2>
+    </div>
+</article>
+</div>
+<div class="pt-8 flex justify-left">
   <button class="product-button hover:bg-purple-100">More Products</button>
 </div>
 </article>
@@ -40,5 +82,4 @@
 <footer class="bottom-0 w-full sm:p-2 p-1 bg-yellow-300 text-xs sticky text-center text-slate-500 border-t border-slate-200 dark:border-slate-700">
     <p class="font-bold text-sm pt-0">This is a take home assessment for the Websites Platform team at Datadog</p>
 </footer></body>
-
 </html>

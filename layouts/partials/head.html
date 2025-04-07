@@ -16,7 +16,6 @@
     <meta name="author" content="{{ .Params.Author}}" />
     {{ end -}}
     {{ hugo.Generator }}
-
     {{ partialCached "css.html" . }}
     {{ with resources.Get "js/main.js" | js.Build }}
     <script src="{{ .RelPermalink }}" defer></script>
