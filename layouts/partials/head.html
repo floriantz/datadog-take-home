@@ -17,9 +17,6 @@
     {{ end -}}
     {{ hugo.Generator }}
     {{ partialCached "css.html" . }}
-    {{ with resources.Get "js/main.js" | js.Build }}
-    <script src="{{ .RelPermalink }}" defer></script>
-    {{ end }}
     <script
     src="https://www.datadoghq-browser-agent.com/eu1/v6/datadog-rum.js"
     type="text/javascript">
@@ -39,4 +36,7 @@
         defaultPrivacyLevel: 'mask-user-input',
         });
     </script>
+    {{ with resources.Get "js/main.js" | js.Build }}
+    <script src="{{ .RelPermalink }}" defer></script>
+    {{ end }}
 </head>
